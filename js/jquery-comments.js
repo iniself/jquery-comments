@@ -451,7 +451,7 @@
                 this.reRenderCommentActionBar(commentModel.parent);
 
                 // Force replies into one level only
-                var outerMostParent = directParentEl.parents('.comment').last();
+                var outerMostParent = directParentEl.parents('li.comment').last();
                 if(outerMostParent.length == 0) outerMostParent = directParentEl;
 
                 // Append element to DOM
